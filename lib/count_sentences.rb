@@ -28,13 +28,12 @@ class String
 
   def count_sentences
     num2 = 0
-    text = []
-    text = self.split(/[<=>"\s]+/)
-    if text.sentence?
+    self = self.split(/[<=>"\s]+/)
+    if self.sentence?
       num2 += 1 
-    elsif text.question?
+    elsif self.question?
       num2 += 1 
-    elsif text.exclamation
+    elsif self.exclamation
       num2 += 1
     end
     return num2
