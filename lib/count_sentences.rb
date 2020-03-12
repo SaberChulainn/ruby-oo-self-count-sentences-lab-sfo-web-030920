@@ -27,12 +27,12 @@ class String
   end
 
   def count_sentences
-    case x 
-    when x.sentence?
+    case self
+    when self.sentence?
       sentence = self.split(".")
-    when x.question?
+    when self.question?
       sentence = self.split("?")
-    when x.exclamation?
+    when self.exclamation?
       sentence = self.split("!")
     end
   end
