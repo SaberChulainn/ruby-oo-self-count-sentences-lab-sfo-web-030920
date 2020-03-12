@@ -28,6 +28,7 @@ class String
 
   def count_sentences
     num2 = 0
+    self.split("")
     if self.sentence?
       num2 += 1 
     elsif self.question?
