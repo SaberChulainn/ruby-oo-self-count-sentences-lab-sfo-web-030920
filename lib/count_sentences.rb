@@ -27,6 +27,8 @@ class String
   end
 
   def count_sentences
-    switch 
+    case x 
+    when x.sentence?
+      self.split
   end
 end
