@@ -33,7 +33,7 @@ class String
       num2 += 1 
     elsif self.question?
       num2 += 1 
-    elsif self.exclamation
+    elsif self.exclamation?
       num2 += 1
     end
     return num2
