@@ -27,13 +27,13 @@ class String
   end
 
   def count_sentences
-    num = self.split
-    return num.count
     if self.sentence?
       num2 += 1 
     elsif self.question?
       num2 += 1 
     elsif self.exclamation
       num2 += 1
+    end
+    return num2
   end
 end
