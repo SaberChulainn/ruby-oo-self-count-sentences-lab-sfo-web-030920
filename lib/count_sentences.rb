@@ -27,6 +27,7 @@ class String
   end
 
   def count_sentences
+    num2 = 0
     if self.sentence?
       num2 += 1 
     elsif self.question?
