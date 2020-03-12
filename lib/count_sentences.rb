@@ -28,7 +28,7 @@ class String
 
   def count_sentences
     num2 = 0
-    text = self.split(/[!.?]+/)
+    text = self.split(/[<=>"\s]+/)
     if text.sentence?
       num2 += 1 
     elsif text.question?
